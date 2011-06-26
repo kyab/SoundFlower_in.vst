@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
+		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
+		EB1534FE13B31558009D0426 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1534FD13B31558009D0426 /* AudioToolbox.framework */; };
+		EB15350013B31558009D0426 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1534FF13B31558009D0426 /* AudioUnit.framework */; };
+		EB15350213B31558009D0426 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB15350113B31558009D0426 /* CoreAudio.framework */; };
+		EB15350413B31558009D0426 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB15350313B31558009D0426 /* CoreAudioKit.framework */; };
+		EB15350613B31558009D0426 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB15350513B31558009D0426 /* MacRuby.framework */; };
+		EB15351913B31589009D0426 /* util.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB15351813B31589009D0426 /* util.mm */; };
+		EB7FFA3D13B302E400BE708B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7FFA3C13B302E400BE708B /* AppKit.framework */; };
+		EB7FFAB913B30D7700BE708B /* CoreAudioInputProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB7FFAB813B30D7700BE708B /* CoreAudioInputProcessor.mm */; };
+		EBE740E613B14734003FFB01 /* again.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBE740E413B14734003FFB01 /* again.mm */; };
+		EBE740FF13B14959003FFB01 /* audioeffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBE740FA13B14959003FFB01 /* audioeffect.cpp */; };
+		EBE7410013B14959003FFB01 /* audioeffectx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBE740FC13B14959003FFB01 /* audioeffectx.cpp */; };
+		EBE7410113B14959003FFB01 /* vstplugmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBE740FE13B14959003FFB01 /* vstplugmain.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		8D576316048677EA00EA77CD /* SoundFlower_in.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundFlower_in.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D576317048677EA00EA77CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1534FD13B31558009D0426 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EB1534FF13B31558009D0426 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		EB15350113B31558009D0426 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		EB15350313B31558009D0426 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		EB15350513B31558009D0426 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		EB15351813B31589009D0426 /* util.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = util.mm; sourceTree = "<group>"; };
+		EB41A84A13B15E2000072972 /* SinGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinGenerator.h; sourceTree = "<group>"; };
+		EB7FFA3C13B302E400BE708B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		EB7FFAB613B30D6D00BE708B /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		EB7FFAB713B30D7700BE708B /* CoreAudioInputProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAudioInputProcessor.h; sourceTree = "<group>"; };
+		EB7FFAB813B30D7700BE708B /* CoreAudioInputProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CoreAudioInputProcessor.mm; sourceTree = "<group>"; };
+		EBE740E413B14734003FFB01 /* again.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = again.mm; sourceTree = "<group>"; };
+		EBE740E513B14734003FFB01 /* again.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = again.h; sourceTree = "<group>"; };
+		EBE740F913B14959003FFB01 /* aeffeditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aeffeditor.h; path = ../vstsdk2.4/public.sdk/source/vst2.x/aeffeditor.h; sourceTree = SOURCE_ROOT; };
+		EBE740FA13B14959003FFB01 /* audioeffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = audioeffect.cpp; path = ../vstsdk2.4/public.sdk/source/vst2.x/audioeffect.cpp; sourceTree = SOURCE_ROOT; };
+		EBE740FB13B14959003FFB01 /* audioeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = audioeffect.h; path = ../vstsdk2.4/public.sdk/source/vst2.x/audioeffect.h; sourceTree = SOURCE_ROOT; };
+		EBE740FC13B14959003FFB01 /* audioeffectx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = audioeffectx.cpp; path = ../vstsdk2.4/public.sdk/source/vst2.x/audioeffectx.cpp; sourceTree = SOURCE_ROOT; };
+		EBE740FD13B14959003FFB01 /* audioeffectx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = audioeffectx.h; path = ../vstsdk2.4/public.sdk/source/vst2.x/audioeffectx.h; sourceTree = SOURCE_ROOT; };
+		EBE740FE13B14959003FFB01 /* vstplugmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vstplugmain.cpp; path = ../vstsdk2.4/public.sdk/source/vst2.x/vstplugmain.cpp; sourceTree = SOURCE_ROOT; };
+		EBE7410213B149AB003FFB01 /* aeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aeffect.h; path = ../vstsdk2.4/pluginterfaces/vst2.x/aeffect.h; sourceTree = SOURCE_ROOT; };
+		EBE7410313B149AB003FFB01 /* aeffectx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aeffectx.h; path = ../vstsdk2.4/pluginterfaces/vst2.x/aeffectx.h; sourceTree = SOURCE_ROOT; };
+		EBE7410413B149AB003FFB01 /* vstfxstore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vstfxstore.h; path = ../vstsdk2.4/pluginterfaces/vst2.x/vstfxstore.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D576313048677EA00EA77CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
+				EB7FFA3D13B302E400BE708B /* AppKit.framework in Frameworks */,
+				EB1534FE13B31558009D0426 /* AudioToolbox.framework in Frameworks */,
+				EB15350013B31558009D0426 /* AudioUnit.framework in Frameworks */,
+				EB15350213B31558009D0426 /* CoreAudio.framework in Frameworks */,
+				EB15350413B31558009D0426 /* CoreAudioKit.framework in Frameworks */,
+				EB15350613B31558009D0426 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* SoundFlower_in */ = {
+			isa = PBXGroup;
+			children = (
+				EBE7410213B149AB003FFB01 /* aeffect.h */,
+				EBE7410313B149AB003FFB01 /* aeffectx.h */,
+				EBE7410413B149AB003FFB01 /* vstfxstore.h */,
+				EBE740F913B14959003FFB01 /* aeffeditor.h */,
+				EBE740FA13B14959003FFB01 /* audioeffect.cpp */,
+				EBE740FB13B14959003FFB01 /* audioeffect.h */,
+				EBE740FC13B14959003FFB01 /* audioeffectx.cpp */,
+				EBE740FD13B14959003FFB01 /* audioeffectx.h */,
+				EBE740FE13B14959003FFB01 /* vstplugmain.cpp */,
+				08FB77AFFE84173DC02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = SoundFlower_in;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
+				EB7FFA3C13B302E400BE708B /* AppKit.framework */,
+				EB1534FD13B31558009D0426 /* AudioToolbox.framework */,
+				EB1534FF13B31558009D0426 /* AudioUnit.framework */,
+				EB15350113B31558009D0426 /* CoreAudio.framework */,
+				EB15350313B31558009D0426 /* CoreAudioKit.framework */,
+				EB15350513B31558009D0426 /* MacRuby.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D576317048677EA00EA77CD /* Info.plist */,
+				8D5B49A704867FD3000E48DA /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EBE740E313B14734003FFB01 /* again */,
+				EB41A84A13B15E2000072972 /* SinGenerator.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D576316048677EA00EA77CD /* SoundFlower_in.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBE740E313B14734003FFB01 /* again */ = {
+			isa = PBXGroup;
+			children = (
+				EB7FFAB613B30D6D00BE708B /* util.h */,
+				EB15351813B31589009D0426 /* util.mm */,
+				EB7FFAB713B30D7700BE708B /* CoreAudioInputProcessor.h */,
+				EB7FFAB813B30D7700BE708B /* CoreAudioInputProcessor.mm */,
+				EBE740E413B14734003FFB01 /* again.mm */,
+				EBE740E513B14734003FFB01 /* again.h */,
+			);
+			name = again;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D57630D048677EA00EA77CD /* SoundFlower_in */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "SoundFlower_in" */;
+			buildPhases = (
+				8D57630F048677EA00EA77CD /* Resources */,
+				8D576311048677EA00EA77CD /* Sources */,
+				8D576313048677EA00EA77CD /* Frameworks */,
+				EBE7413213B14CB5003FFB01 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundFlower_in;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = SoundFlower_in;
+			productReference = 8D576316048677EA00EA77CD /* SoundFlower_in.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "SoundFlower_in" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* SoundFlower_in */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D57630D048677EA00EA77CD /* SoundFlower_in */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D57630F048677EA00EA77CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EBE7413213B14CB5003FFB01 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Building ${PRODUCT_NAME}(${TARGET_NAME})\"\nrm -rf /Library/Audio/Plug-Ins/VST/${PRODUCT_NAME}.vst\ncp -r ${TARGET_BUILD_DIR}/${TARGET_NAME}.bundle /Library/Audio/Plug-Ins/VST/${PRODUCT_NAME}.vst\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D576311048677EA00EA77CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE740E613B14734003FFB01 /* again.mm in Sources */,
+				EBE740FF13B14959003FFB01 /* audioeffect.cpp in Sources */,
+				EBE7410013B14959003FFB01 /* audioeffectx.cpp in Sources */,
+				EBE7410113B14959003FFB01 /* vstplugmain.cpp in Sources */,
+				EB7FFAB913B30D7700BE708B /* CoreAudioInputProcessor.mm in Sources */,
+				EB15351913B31589009D0426 /* util.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8D5B49A704867FD3000E48DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB911B08733D790010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = SoundFlower_in;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1DEB911C08733D790010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = SoundFlower_in;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1DEB911F08733D790010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../vstsdk2.4/";
+				INFOPLIST_PREPROCESS = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				WRAPPER_EXTENSION = vst;
+			};
+			name = Debug;
+		};
+		1DEB912008733D790010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../vstsdk2.4/";
+				INFOPLIST_PREPROCESS = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				WRAPPER_EXTENSION = vst;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB911A08733D790010E9CD /* Build configuration list for PBXNativeTarget "SoundFlower_in" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB911B08733D790010E9CD /* Debug */,
+				1DEB911C08733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB911E08733D790010E9CD /* Build configuration list for PBXProject "SoundFlower_in" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB911F08733D790010E9CD /* Debug */,
+				1DEB912008733D790010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
